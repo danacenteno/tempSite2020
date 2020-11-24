@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>&#10024 Dana Centeno | Front-End Web Developer &#10024</title>
+
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet"
+	  href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+	<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+
+	<!-- favicons -->
+	<link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/faviconsapple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="favicons/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+</head>
+<body>
+	<header>
+
+		<div class="intro wrapper">
+			<h1 class="animated fadeInDown"><span>Hi there!</span> I'm Dana Centeno, a front-end web developer based in Toronto, Canada. Beautiful, functional and accessible digital experiences are my jam. &#10024</h1>
+
+			<div class="small-blurb animated fadeInUp">
+				<p>Thanks for stopping by! While you're here, why not check out some of <a href="#" class="recent-work">my work</a> or <a href="mailto:danamariecenteno@gmail.com?Subject=Hey Dana! Let%27s make some cool stuff together!">say hello</a>? &#128640</p>
+			</div>
+		</div>
+	</header>
+	
+	<div class="work">
+		<div class="work-wrapper">
+			<button aria-label="Close" class="close-btn" target="_blank"><i class="fas fa-times"></i></button>
+			<ul>
+				<li>Client Work</li>
+				<li><a href="https://hatake-global.com/" target="_blank">Hatake Global</a></li>
+				<li><a href="https://www.hydroone.com/" target="_blank">Hydro One</a></li>
+				<li><a href="http://www.pursuitmb.com/" target="_blank">Pursuit Advisory</a></li>
+				<li><a href="http://vanbridgerjenner.com/" target="_blank">VanBridger Jenner LLC.</a></li>
+			</ul>
+	
+			<ul>
+				<li>Personal Projects</li>
+				<li><a href="https://spacem-ipsum.netlify.com/">Spacem Ipsum</a></li>
+				<li><a href="https://www.behance.net/gallery/65288299/Beacon-Transit-App" target="_blank">Beacon App Design</a></li>
+				<li><a href="https://www.behance.net/gallery/65332621/PurposeBuilt-Time-Tracker" target="_blank">P/B Time Tracker Design</a></li>
+				<li><a href="https://sevendeadlysloths.netlify.app/" target="_blank">Seven Deadly Sloths</a></li>
+			</ul>
+
+		</div>
+	</div>
+
+
+	<footer>
+		<div class="social animated fadeIn">
+			<a aria-label="Behance profile" href="https://behance.net/danacenteno" target="_blank">
+				<i aria-hidden="true" class="fab fa-behance"title="Go to Dana's Behance profile"></i>
+			</a>
+
+			<a aria-label="Github profile" href="https://github.com/danacenteno" target="_blank">
+				<i aria-hidden="true" class="fab fa-github"title="Go to Dana's GitHub profile"></i>
+			</a>
+
+			<a aria-label="Twitter profile" href="https://twitter.com/danacenteno_" target="_blank">
+				<i aria-hidden="true" class="fab fa-twitter"title="Go to Dana's Twitter profile"></i>
+			</a>
+
+			<a aria-label="LinkedIn profile" href="https://www.linkedin.com/in/danacenteno/" target="_blank">
+				<i caria-hidden="true" class="fab fa-linkedin-in" title="Go to Dana's LinkedIn profile"></i>
+			</a>
+
+			<a aria-label="Contact through email" href="mailto:danamariecenteno@gmail.com?Subject=Hey Dana! Let%27s make some cool stuff together!">
+				<i aria-hidden="true" class="fa fa-envelope"title="Contact Dana through email"></i>
+			</a>
+		</div>
+	</footer>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<script>
+		$(document).ready(function(){
+			$(".recent-work").on("click", function(){
+				$(".work-wrapper").fadeTo("slow", 1).addClass("show");
+			});
+
+			$(".close-btn").on("click", function(){
+				$(".work-wrapper").fadeOut(400).removeClass("show");
+			});
+		});
+	</script>
+</body>
+</html>
