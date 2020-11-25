@@ -101,7 +101,9 @@ a {
 }
 
 .wrapper a:hover:before,
-.work-wrapper li a:hover:before  {
+.work-wrapper li a:hover:before,
+.wrapper a:focus:before,
+.work-wrapper li a:focus:before   {
 	visibility: visible;
 	transform: scaleX(1);
 }
